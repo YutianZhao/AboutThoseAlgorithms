@@ -4,6 +4,9 @@ namespace KMP
 {
     class Program
     {
+        // KMP is a algorithm to find if a string (pat) is a substring of another string (txt)
+        // Time complexity: O(m + n), m is length of pat, n is length of txt
+        // Space complexity: O(m), because we create a map with length of pat.
         static void Main(string[] args)
         {
             string txt = "abcdefabcabcdeabc";

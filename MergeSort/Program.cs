@@ -4,6 +4,9 @@ namespace MergeSort
 {
     class Program
     {
+        // MergeSort is a sorting algorithm with:
+        // Time complexity: O(nlogn)
+        // Space complexity: O(n)
         static void Main(string[] args)
         {
             int[] arr = new int[] { 2, 5, -4, 11, 0, 18, 22, 67, 51, 6 };

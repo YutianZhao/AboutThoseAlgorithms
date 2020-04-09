@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsole", "TestConsole\TestConsole.csproj", "{B8CEE6CA-79C5-45C6-90FC-DABAF9163223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KMP", "KMP\KMP.csproj", "{8BCC500B-5226-4E75-8299-6A46CBE9B902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\MergeSort.csproj", "{28BD3527-8B32-4A3D-9766-B023055EABB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8CEE6CA-79C5-45C6-90FC-DABAF9163223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CEE6CA-79C5-45C6-90FC-DABAF9163223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CEE6CA-79C5-45C6-90FC-DABAF9163223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CEE6CA-79C5-45C6-90FC-DABAF9163223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BCC500B-5226-4E75-8299-6A46CBE9B902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BCC500B-5226-4E75-8299-6A46CBE9B902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BCC500B-5226-4E75-8299-6A46CBE9B902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BCC500B-5226-4E75-8299-6A46CBE9B902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BD3527-8B32-4A3D-9766-B023055EABB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BD3527-8B32-4A3D-9766-B023055EABB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BD3527-8B32-4A3D-9766-B023055EABB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BD3527-8B32-4A3D-9766-B023055EABB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9884FF63-BA71-4BBE-AA7E-F5315233E828}
+	EndGlobalSection
+EndGlobal

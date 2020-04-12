@@ -17,12 +17,12 @@ namespace MergeSort
             }
             Console.ReadLine();
         }
-        
+
         static void MergeSort(int[] arr, int begin, int end)
         {
-            if (begin < end)
+            if(begin < end)
             {
-                int mid = (begin + end) / 2;
+                int mid = begin + (end - begin) / 2;
                 MergeSort(arr, begin, mid);
                 MergeSort(arr, mid + 1, end);
                 Merge(arr, begin, mid, end);
@@ -35,22 +35,23 @@ namespace MergeSort
             int N = end - mid;
             int[] leftArray = new int[M];
             int[] rightArray = new int[N];
+
             int i, j;
-            for (i = 0; i < M; i++)
+            for(i = 0; i < M; i++)
             {
                 leftArray[i] = arr[begin + i];
             }
-            for (j = 0; j < N; j++)
+            for(j = 0; j < N; j++)
             {
                 rightArray[j] = arr[mid + j + 1];
             }
 
-            int k = begin;
             i = 0;
             j = 0;
+            int k = begin;
             while (i < M && j < N)
             {
-                if (leftArray[i] <= rightArray[j])
+                if(leftArray[i] <= rightArray[j])
                 {
                     arr[k] = leftArray[i];
                     i++;

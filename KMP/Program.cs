@@ -22,6 +22,7 @@ namespace KMP
             int[] map = new int[M];
 
             CreateMap(pat, M, map);
+
             int i = 0;
             int j = 0;
             while (i < N)
@@ -31,7 +32,7 @@ namespace KMP
                     i++;
                     j++;
                 }
-                if (j == M)
+                if (M == j)
                 {
                     Console.WriteLine("Key at " + (i - j));
                     j = map[j - 1];
@@ -53,9 +54,8 @@ namespace KMP
         static void CreateMap(string pat, int M, int[] map)
         {
             int len = 0;
-            map[0] = 0;
-
             int i = 1;
+            map[0] = 0;
             while (i < M)
             {
                 if (pat[i] == pat[len])

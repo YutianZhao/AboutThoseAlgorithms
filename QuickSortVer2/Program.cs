@@ -6,7 +6,7 @@ namespace QuickSortVer2
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[] { 2, 5, -4, 11, 0, 18, 22, 67, 51, 6 };
+            int[] arr = new int[] { 2, 5, -4, 11, 0, 18, 22, 67, 51, 6, 5, -4 };
             QuickSort(arr, 0, arr.Length - 1);
             foreach (var item in arr)
             {
@@ -46,13 +46,13 @@ namespace QuickSortVer2
                 }
                 if (begin < end)
                 {
-                    if (arr[begin] == arr[end])
-                    {
-                        return end;
-                    }
                     int temp = arr[begin];
                     arr[begin] = arr[end];
                     arr[end] = temp;
+                    if (arr[begin] == arr[end])
+                    {
+                        begin++;
+                    }
                 }
                 else
                 {
